@@ -1,48 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Educativo</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
   <main class="grid-container">
-
+    
     <section class="left-panel">
-      <article class="info-overlay">
-        <h2>Bienvenido al sistema educativo</h2>
-        <p>Gestión institucional, seguimiento académico y más.</p>
+      <article class="overlay">
+        <h1>Bienvenido al sistema educativo</h1>
+        <p class="desc">
+          Gestión institucional, seguimiento académico y más.
+        </p>
         <ul>
-          <li>Gestión de estudiantes y profesores</li>
-          <li>Calificaciones y reportes</li>
-          <li>Control de asistencia</li>
+          <li>Gestión completa de estudiantes y profesores</li>
+          <li>Sistema de calificaciones y boletines</li>
+          <li>Control de asistencia en tiempo real</li>
+          <li>Comunicación integrada y foros</li>
         </ul>
-        <section class="stats">
-          <article>
-            <strong>1,200+</strong>
-            <span>Estudiantes</span>
-          </article>
-          <article>
-            <strong>80+</strong>
-            <span>Profesores</span>
-          </article>
-          <article>
-            <strong>150+</strong>
-            <span>Cursos</span>
-          </article>
-        </section>
+        <div class="metrics">
+          <span><strong>1,234+</strong> Estudiantes</span>
+          <span><strong>80+</strong> Profesores</span>
+          <span><strong>150+</strong> Cursos</span>
+        </div>
       </article>
     </section>
 
     <section class="right-panel">
-      <article class="login-form">
-        <h2>Iniciar sesión</h2>
+      <article class="login-box">
+        <img src="img/logoSena.png" alt="Logo" class="logo">
+        <h2>Bienvenido a GranCole</h2>
+        <p class="subtitle">Inicia sesión para continuar</p>
+
         <form>
-          <input type="text" placeholder="Usuario" required />
-          <input type="password" placeholder="Contraseña" required />
-          <button type="submit">Entrar</button>
+          <label>Usuario</label>
+          <div class="input-group">
+            <span class="icon"><i class="fa fa-user"></i></span>
+            <input type="text" placeholder="0000000" required>
+          </div>
+
+          <label>Contraseña</label>
+          <div class="input-group">
+            <span class="icon"><i class="fa fa-lock"></i></span>
+            <input type="password" placeholder="••••••" required>
+          </div>
+
+          <a href="#" class="forgot">¿Olvidaste tu contraseña?</a>
+
+          <button type="submit" class="btn-login">
+            Iniciar Sesión <i class="fa fa-arrow-right"></i>
+          </button>
+
+          <p class="register">
+            ¿No tienes cuenta? <a href="#">Contacta al administrador</a>
+          </p>
+
+          <small class="copy">&copy; 2025 GranCole Pro. Todos los derechos reservados.</small>
         </form>
       </article>
     </section>
