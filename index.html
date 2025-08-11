@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Educativo</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="js/script.js">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
+  <button id="darkModeToggle" class="dark-mode-btn">
+    <i class="fa fa-moon"></i>
+  </button>
+
   <main class="grid-container">
-    
+
     <section class="left-panel">
       <article class="overlay">
         <h1>Bienvenido al sistema educativo</h1>
@@ -24,11 +27,11 @@
           <li>Control de asistencia en tiempo real</li>
           <li>Comunicación integrada y foros</li>
         </ul>
-        <div class="metrics">
+        <section class="metrics">
           <span><strong>1,234+</strong> Estudiantes</span>
           <span><strong>80+</strong> Profesores</span>
           <span><strong>150+</strong> Cursos</span>
-        </div>
+        </section>
       </article>
     </section>
 
@@ -40,16 +43,16 @@
 
         <form>
           <label>Usuario</label>
-          <div class="input-group">
+          <section class="input-group">
             <span class="icon"><i class="fa fa-user"></i></span>
             <input type="text" placeholder="0000000" required>
-          </div>
+          </section>
 
           <label>Contraseña</label>
-          <div class="input-group">
+          <section class="input-group password-group">
             <span class="icon"><i class="fa fa-lock"></i></span>
             <input type="password" placeholder="••••••" required>
-          </div>
+          </section>
 
           <a href="#" class="forgot">¿Olvidaste tu contraseña?</a>
 
@@ -68,5 +71,6 @@
 
   </main>
 
+  <script src="js/script.js"></script>
 </body>
 </html>
