@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -16,12 +17,12 @@ body {
 }
 
 .left-panel {
-  background: linear-gradient(rgba(83, 0, 255, 0.45), rgba(83, 0, 255, 0.45)),
+  background: linear-gradient(rgba(83, 0, 255, 0.5), rgba(83, 0, 255, 0.5)),
               url("../img/estudiante.jpg") center/cover no-repeat;
   color: white;
-  padding: 59px;
+  padding: 40px;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 
@@ -31,29 +32,27 @@ body {
 }
 
 .overlay h1 {
-  font-size: 2.2rem;
-  line-height: 1.05;
-  margin-bottom: 12px;
+  font-size: 2rem;
   font-weight: 700;
+  margin-bottom: 12px;
 }
 
 .overlay .desc {
   font-size: 1rem;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   color: rgba(255, 255, 255, 0.95);
 }
 
 .overlay ul {
   list-style: none;
-  margin-bottom: 18px;
-  padding-left: 0;
+  margin-bottom: 20px;
 }
 
 .overlay ul li {
   margin-bottom: 10px;
-  padding-left: 22px;
+  padding-left: 20px;
   position: relative;
-  font-size: 0.98rem;
+  font-size: 0.95rem;
   color: rgba(255,255,255,0.9);
 }
 
@@ -72,12 +71,12 @@ body {
   display: flex;
   gap: 24px;
   margin-top: 16px;
-  align-items: baseline;
+  font-size: 0.9rem;
 }
 
 .metrics strong {
   font-size: 1.1rem;
-  margin-right: 6px;
+  margin-right: 4px;
 }
 
 .right-panel {
@@ -85,35 +84,40 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px; 
 }
 
 .login-box {
   background: white;
   padding: 30px;
   border-radius: 10px;
-  max-width: 400px;
+  max-width: 380px;
   width: 100%;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 80px;
   margin-bottom: 15px;
 }
 
+h2 {
+  margin-bottom: 6px;
+  font-size: 1.4rem;
+}
+
 .subtitle {
-  font-size: 0.95rem;
-  color: #777;
+  font-size: 0.9rem;
+  color: #555;
   margin-bottom: 20px;
 }
 
 label {
   display: block;
-  margin-bottom: 6px;
-  font-weight: bold;
   text-align: left;
+  font-size: 0.85rem;
+  margin-bottom: 5px;
+  color: #333;
 }
 
 .input-group {
@@ -141,8 +145,14 @@ label {
 .forgot {
   display: block;
   text-align: right;
-  font-size: 0.85rem;
-  margin-bottom: 15px;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.forgot:hover {
+  text-decoration: underline;
 }
 
 .btn-login {
@@ -160,23 +170,82 @@ label {
   gap: 8px;
 }
 
+.btn-login:hover {
+  background: #254d99;
+}
+
 .register {
   font-size: 0.85rem;
   margin-top: 15px;
 }
 
+.register a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
 .copy {
   display: block;
-  margin-top: 8px;
   font-size: 0.75rem;
-  color: #888;
+  color: #777;
+  margin-top: 15px;
 }
+
 
 @media (max-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto; 
+    height: auto; 
   }
+
   .left-panel {
-    display: none;
+    padding: 30px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .overlay {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .right-panel {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f0ff;
+  }
+
+  .login-box {
+    max-width: 400px;
+    width: 100%;
+    padding: 25px;
+  }
+
+  .overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .overlay .desc {
+    font-size: 1rem;
+  }
+
+  .overlay ul li {
+    font-size: 0.95rem;
+  }
+
+  .metrics {
+    font-size: 0.9rem;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
