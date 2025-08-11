@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Educativo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <button id="darkModeToggle" class="dark-mode-btn">
+    <i class="fa fa-moon"></i>
+  </button>
+
+  <main class="grid-container">
+
+    <section class="left-panel">
+      <article class="overlay">
+        <h1>Bienvenido al sistema educativo</h1>
+        <p class="desc">
+          Gestión institucional, seguimiento académico y más.
+        </p>
+        <ul>
+          <li>Gestión completa de estudiantes y profesores</li>
+          <li>Sistema de calificaciones y boletines</li>
+          <li>Control de asistencia en tiempo real</li>
+          <li>Comunicación integrada y foros</li>
+        </ul>
+        <section class="metrics">
+          <span><strong>1,234+</strong> Estudiantes</span>
+          <span><strong>80+</strong> Profesores</span>
+          <span><strong>150+</strong> Cursos</span>
+        </section>
+      </article>
+    </section>
+
+    <section class="right-panel">
+      <article class="login-box">
+        <img src="img/logoSena.png" alt="Logo" class="logo">
+        <h2>Bienvenido a GranCole</h2>
+        <p class="subtitle">Inicia sesión para continuar</p>
+
+        <form>
+          <label>Usuario</label>
+          <section class="input-group">
+            <span class="icon"><i class="fa fa-user"></i></span>
+            <input type="text" placeholder="0000000" required>
+          </section>
+
+          <label>Contraseña</label>
+          <section class="input-group password-group">
+            <span class="icon"><i class="fa fa-lock"></i></span>
+            <input type="password" placeholder="••••••" required>
+          </section>
+
+          <a href="#" class="forgot">¿Olvidaste tu contraseña?</a>
+
+          <button type="submit" class="btn-login">
+            Iniciar Sesión <i class="fa fa-arrow-right"></i>
+          </button>
+
+          <p class="register">
+            ¿No tienes cuenta? <a href="#">Contacta al administrador</a>
+          </p>
+
+          <small class="copy">&copy; 2025 GranCole Pro. Todos los derechos reservados.</small>
+        </form>
+      </article>
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
